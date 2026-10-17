@@ -1,0 +1,14 @@
+---
+nginx_sitename: ansible-demo
+nginx_listen_port: 80
+nginx_docroot: "/var/www/{{ nginx_sitename }}"
+nginx_pages:
+  - file: index.html
+    title: Welkom
+    body: Deze pagina is uitgerold door Ansible en wordt geserveerd door nginx.
+  - file: over.html
+    title: Over deze server
+    body: Niemand heeft deze server met de hand geconfigureerd.
+  - file: contact.html
+    title: Contact
+    body: Wil je iets aanpassen? Pas de variabelen aan, niet de server.
